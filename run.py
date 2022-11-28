@@ -205,4 +205,20 @@ class Trainer:
         """
         return self.name
 
+    def info(self):
+        """
+        This method prints to the console information
+        specific to each instance of the Trainer class
+        including the number of pokemon held, number of
+        potions held, information specific to each pokemon
+        held, and also prints the current active pokemon to 
+        the console/terminal by invoking the show_active()
+        method.
+        """
+        print(f"\n{self} has {len(self.pokemons)} Pokemon")
+        self.show_active()
+        print(f"Potions: {self.potions}")
+        for pokemon in self.pokemons:
+            pokemom.info()
+
 
