@@ -18,7 +18,8 @@ class Pokemon:
         This method is used to instruct Python what
         the preferred string representation of this
         class should be. Here, it simply returns the
-        .name attribute of the newly instantiated object.
+        .name attribute of the newly instantiated Pokemon
+        object.
         """
         return self.name
 
@@ -174,4 +175,34 @@ class RegenerativePokemon(Pokemon):
     def __init__(self, name, type, level):
         super().__init__(name, type, level)
         self.regenerative = True
+
+
+class Trainer:
+    """
+    This Trainer class serves as a template for
+    creating instances of this class (i.e for
+    creating subsequent Trainer objects)
+    """
+
+    def __init__(self, name, pokemons, potions=3):
+        """
+        This method initializes newly created 
+        instances of this class with the specified
+        attributes.
+        """
+        self.name = name
+        self.pokemons = pokemons
+        self.active = self.pokemons[0]
+        self.potions = potions
+
+    def __repr__(self):
+        """
+        This method is used to instruct Python what
+        the preferred string representation of this
+        class should be. Here, it simply returns the
+        .name attribute of the newly instantiated 
+        Trainer object.
+        """
+        return self.name
+
 
