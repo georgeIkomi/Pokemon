@@ -228,4 +228,32 @@ class Trainer:
         """
         print(f"{self}'s active Pokemon is {self.active}")
 
+    def battle(self, opponent_pokemon):
+        """
+        This method simulates the battle/fight between the
+        pokemons held by different instances of the Trainer class,
+        and takes the pokemon (of the opposing trainer) being attacked 
+        as a parameter. It prints information regarding the current 
+        attacking pokemon belonging to one trainer and the current 
+        pokemon of the other trainer that's being attacked. It then
+        checks to see if the current health of the pokemon being 
+        attacked is equal to 0. If so, it removes the pokemon
+        in question from the list of pokemons held by that trainer,
+        and prints information signalling that this pokemon is
+        dead. This method then checks to see if the length of 
+        the list of pokemons held by the opposing trainer is 
+        greater than 0. If so, it sets the current active pokemon
+        to the pokemon that's next in the list of pokemons.
+        Finally, it prints that information to the console/terminal.
+        """
+        print(f"{self} attacks {opponent_pokemon}")
+        self.active.battle(opponent_pokemon.active)
+        if opponent_pokemon.active.current_health == 0:
+            opponent_pokemon.pokemons.remove(opponent_pokemon.active)
+            print(f"{opponent_pokemon.active} dies")
+            if len(opponent_pokemon.pokemons) > 0:
+                opponent_pokemon.active = opponent_pokemon.pokemons[0]
+                opponent_pokemon.show_active()
+
+
 
