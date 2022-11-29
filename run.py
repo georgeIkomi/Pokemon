@@ -271,4 +271,29 @@ class Trainer:
         pokemon.gain_health(100)
 
 
+class Game:
+    """
+    This Game class serves as a template for
+    creating instances of this class (i.e for
+    creating subsequent Game objects). Each game
+    play is represented by an instance of this class.
+    """
+
+    full_commands_list = ["Info", "Change active Pokemon", "Fight", "Use healing potion", "Exit"]
+
+    def __init__(self, all_trainers):
+        """
+        This method initializes newly created 
+        instances of this class with the specified
+        attributes.
+        """
+        self.all_trainers = all_trainers
+        self.trainers = []
+        self.modes = []
+        self.turn = 1
+        self.computer_commands = []
+        self.set_turn = True
+        
+
+
 
