@@ -255,5 +255,20 @@ class Trainer:
                 opponent_pokemon.active = opponent_pokemon.pokemons[0]
                 opponent_pokemon.show_active()
 
+    def use_potion(self, pokemon):
+        """
+        This method (taking the pokemon as a parameter) 
+        enables the trainers to use potions for the purpose 
+        of healing each of the respective pokemon held. When 
+        used, this method decreases the number of potions held, 
+        prints information to the fact that the trainer in question
+        has just used a potion on the pokemon taken in as a parameter.
+        Finally it adds a pre-determined amount to the health of 
+        this pokemon via the gain_health() method.
+        """
+        self.potions -= 1
+        print(f"{self} uses potion on {pokemon}")
+        pokemon.gain_health(100)
+
 
 
