@@ -221,4 +221,11 @@ class Trainer:
         for pokemon in self.pokemons:
             pokemom.info()
 
+    def show_active(self):
+        """
+        This method prints the current active pokemon for
+        each newly created instance of the Trainer class.
+        """
+        print(f"{self}'s active Pokemon is {self.active}")
+
 
