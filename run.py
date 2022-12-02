@@ -40,7 +40,9 @@ class Pokemon:
         that is  assigned to each of the instance variables at the start
         or beginning of a new game.
         """
-        level_stat = lambda x: int(x*(2+self.level)/3)
+        def level_stat(x):
+            return int(x*(2+self.level)/3)
+
         self.max_health = level_stat(self.base_max_health)
         self.current_health = self.max_health
         self.attack = level_stat(self.base_attack)
