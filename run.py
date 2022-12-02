@@ -34,11 +34,11 @@ class Pokemon:
         variables for every instantiated Pokemon object at the
         start or beginning of each new game. The assigned
         initialization values for each of the instance variables
-        is allotted using a lambda function (which accepts 1 parameter) 
+        is allotted using a lambda function (which accepts 1 parameter)
         and a formula. The lambda function applies the formula to
         the accepted parameter and calculates the initialization value
         that is  assigned to each of the instance variables at the start
-        or beginning of a new game. 
+        or beginning of a new game.
         """
         level_stat = lambda x: int(x*(2+self.level)/3)
         self.max_health = level_stat(self.base_max_health)
