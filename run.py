@@ -459,3 +459,6 @@ def choose_menu(lst, title):
 charmander = AttackPokemon("Charmander", "Fire", 3)
 totodile = AttackPokemon("Totodile", "Water", 2)
 sunkern = AttackPokemon("Sunkern", "Grass", 1)
+slowking = DefensivePokemon("Slowking", "Water", 3)
+bulbasaur = DefensivePokemon("Bulbasaur", "Grass", 2)
+torchic = DefensivePokemon("Torchic", "Fire", 1)
