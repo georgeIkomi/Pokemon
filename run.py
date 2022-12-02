@@ -64,7 +64,7 @@ class Pokemon:
 
     def lose_health(self, amount):
         """
-        This method deducts health from a pokemon and 
+        This method deducts health from a pokemon and
         prints the current health remaining.
         """
         amount = min(amount, self.current_health)
@@ -90,7 +90,7 @@ class Pokemon:
         other pokemons. This is achieved by passing a
         percentage of the maximum health of the pokemon
         as a parameter to the gain_health method which
-        then adds this amount to the health of the pokemon. 
+        then adds this amount to the health of the pokemon.
         """
         if self.current_health < self.max_health:
             print(f"{self} regenerates")
@@ -103,7 +103,7 @@ class Pokemon:
         from the battle_stats() method into the "attack" and description
         variables. The method then uses these to print out information
         about the state of play to the player/players and facilitates the
-        deduction the attack value from the health of the pokemon being 
+        deduction the attack value from the health of the pokemon being
         attacked using the lose_health() method.
         """
         attack, description = self.battle_stats(opponent_pokemon)
@@ -117,13 +117,13 @@ class Pokemon:
         of pokemons doing battle. Each type is alloted a
         value that is somewhat indicative of its attacking
         power and used in the formula for quantifying the
-        attack on the opposing pokemon. Each type is also 
-        allotted a description. The attack value of the 
-        attacking pokemon and a brief description of 
-        both the attacking and attacked pokemon are displayed 
+        attack on the opposing pokemon. Each type is also
+        allotted a description. The attack value of the
+        attacking pokemon and a brief description of
+        both the attacking and attacked pokemon are displayed
         to the trainer or player as the pokemons fight.
         """
-        types_dict = {"Water": 0, "Fire": 1, "Grass": 2}
+        types_dict = {"Fire": 0, "Water": 1, "Grass": 2}
         attack_type = (types_dict[self.type] -
                        types_dict[opponent_pokemon.type]) % 3
         attack_type_power_proportions = {0: 1, 1: 3/2, 2: 2/3}
@@ -135,7 +135,7 @@ class Pokemon:
 
         return attack, attack_type_description[attack_type]
 
-    
+
 class AttackPokemon(Pokemon):
     """
     This AttackPokemon class serves as a template for
@@ -156,11 +156,11 @@ class DefensivePokemon(Pokemon):
     """
     This DefensivePokemon class serves as a template for
     creating instances of this class (i.e for
-    creating subsequent DefensivePokemon instances or objects), 
+    creating subsequent DefensivePokemon instances or objects),
     and is a subclass of the parent class (Pokemon). It has
-    a .__init__() method which overrides the initialization 
+    a .__init__() method which overrides the initialization
     .__init__() method of its superclass (Pokemon) but has the
-    capability of still invoking the __init__() method of its
+    capability of still invoking the .__init__() method of its
     parent class (Pokemon) through the use of super().
     """
     def __init__(self, name, type, level):
@@ -172,11 +172,11 @@ class RegenerativePokemon(Pokemon):
     """
     This RegenerativePokemon class serves as a template for
     creating instances of this class (i.e for
-    creating subsequent RegenerativePokemon instances or objects), 
+    creating subsequent RegenerativePokemon instances or objects),
     and is a subclass of the parent class (Pokemon). It has
-    a .__init__() method which overrides the initialization 
+    a .__init__() method which overrides the initialization
     .__init__() method of its superclass (Pokemon) but has the
-    capability of still invoking the __init__() method of its
+    capability of still invoking the .__init__() method of its
     parent class (Pokemon) through the use of super().
     """
     def __init__(self, name, type, level):
@@ -193,7 +193,7 @@ class Trainer:
 
     def __init__(self, name, pokemons, potions=3):
         """
-        This method initializes newly created 
+        This method initializes newly created
         instances of this class with the specified
         attributes.
         """
@@ -207,7 +207,7 @@ class Trainer:
         This method is used to instruct Python what
         the preferred string representation of this
         class should be. Here, it simply returns the
-        .name attribute of the newly instantiated 
+        .name attribute of the newly instantiated
         Trainer object.
         """
         return self.name
@@ -239,16 +239,16 @@ class Trainer:
         """
         This method simulates the battle/fight between the
         pokemons held by different instances of the Trainer class,
-        and takes the pokemon (of the opposing trainer) being attacked 
-        as a parameter. It prints information regarding the current 
-        attacking pokemon belonging to one trainer and the current 
+        and takes the pokemon (of the opposing trainer) being attacked
+        as a parameter. It prints information regarding the current
+        attacking pokemon belonging to one trainer and the current
         pokemon of the other trainer that's being attacked. It then
-        checks to see if the current health of the pokemon being 
+        checks to see if the current health of the pokemon being
         attacked is equal to 0. If so, it removes the pokemon
         in question from the list of pokemons held by that trainer,
         and prints information signalling that this pokemon is
-        dead. This method then checks to see if the length of 
-        the list of pokemons held by the opposing trainer is 
+        dead. This method then checks to see if the length of
+        the list of pokemons held by the opposing trainer is
         greater than 0. If so, it sets the current active pokemon
         to the pokemon that's next in the list of pokemons.
         Finally, it prints that information to the console/terminal.
@@ -264,13 +264,13 @@ class Trainer:
 
     def use_potion(self, pokemon):
         """
-        This method (taking the pokemon as a parameter) 
-        enables the trainers to use potions for the purpose 
-        of healing each of the respective pokemon held. When 
-        used, this method decreases the number of potions held, 
+        This method (taking the pokemon as a parameter)
+        enables the trainers to use potions for the purpose
+        of healing each of the respective pokemon held. When
+        used, this method decreases the number of potions held,
         prints information to the fact that the trainer in question
         has just used a potion on the pokemon taken in as a parameter.
-        Finally it adds a pre-determined amount to the health of 
+        Finally it adds a pre-determined amount to the health of
         this pokemon via the gain_health() method.
         """
         self.potions -= 1
@@ -286,11 +286,12 @@ class Game:
     play is represented by an instance of this class.
     """
 
-    full_commands_list = ["Info", "Change active Pokemon", "Fight", "Use healing potion", "Exit"]
+    full_commands_list = ["Info", "Change active Pokemon",
+                          "Fight", "Use healing potion", "Exit"]
 
     def __init__(self, all_trainers):
         """
-        This method initializes newly created 
+        This method initializes newly created
         instances of this class with the specified
         attributes.
         """
