@@ -356,6 +356,38 @@ class Game:
             elif self.command == "Exit":
                 break
 
+    def choose_trainers(self):
+        """
+        This method presents the user with the choice
+        of selecting the first trainer mode and first trainer,
+        then the second trainer mode and second trainer. The
+        method iterates over the provided titles list and with
+        the help of the choose_menu() method appends the templates
+        for choosing the trainer modes to the modes list, and the
+        trainers to the trainers list. Using the titles list it
+        provides information to the user as to whether it is the
+        first or second trainer mode being considered, or the
+        first or second trainer that's under consideration.
+
+        The method then iterates over the pokemons held by each trainer
+        in the .trainers list and calls the set_stats() method on each
+        thereby setting up these pokemon objects with initialization
+        values for that instance of the game play.
+
+        Finally, it removes the chosen trainer from the .trainers list
+        since it has already been chosen, giving the user subsequent
+        options that do not include a trainer that has already been chosen.
+        """
+        titles = ["First", "Second"]
+        for num in range(2):
+            self.modes.append(choose_menu(
+                ["Player", "Computer"], f"{titles[num]} Trainer mode:"))
+            self.trainers.append(trainer := choose_menu(
+                self.all_trainers, f"{titles[num]} Trainer:"))
+            for pokemon in trainer.pokemons:
+                pokemon.set_stats()
+            self.all_trainers.remove(trainer)
+
 
 def choose_menu(lst, title):
     """
