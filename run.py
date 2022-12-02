@@ -226,7 +226,7 @@ class Trainer:
         self.show_active()
         print(f"Potions: {self.potions}")
         for pokemon in self.pokemons:
-            pokemom.info()
+            pokemon.info()
 
     def show_active(self):
         """
