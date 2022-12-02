@@ -471,3 +471,5 @@ siebold = Trainer("Siebold", [slowking, chimchar, sunkern])
 cilan = Trainer("Cilan", [oddish, totodile, torchic])
 
 all_trainers = [malva, siebold, cilan]
+
+game = Game(all_trainers)
