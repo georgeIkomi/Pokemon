@@ -473,3 +473,4 @@ cilan = Trainer("Cilan", [oddish, totodile, torchic])
 all_trainers = [malva, siebold, cilan]
 
 game = Game(all_trainers)
+game.start()
