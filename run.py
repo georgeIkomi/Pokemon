@@ -454,3 +454,8 @@ def choose_menu(lst, title):
                 return lst[int(choice)]
         except ValueError as e:
             print(f"Invalid data: {e}, please try again.\n")
+
+
+charmander = AttackPokemon("Charmander", "Fire", 3)
+totodile = AttackPokemon("Totodile", "Water", 2)
+sunkern = AttackPokemon("Sunkern", "Grass", 1)
