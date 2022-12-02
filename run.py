@@ -355,3 +355,30 @@ class Game:
             # Exit
             elif self.command == "Exit":
                 break
+
+
+def choose_menu(lst, title):
+    """
+    This method takes a list and option title as parameters.
+    It the iterates over the list (using the enumerate()
+    method) assigning the counter as a key for each value
+    within the provided list and displayed to the user in 
+    the terminal. Finally, it checks if the input provided
+    by the user is contained within the provided list. If
+    so, it returns the value chosen. Otherwise, it raises
+    a ValueError informing the user that an invalid input
+    has been given and prompts the user to try again. 
+    """
+    print(f"\n{title}")
+    for item in enumerate(lst):
+        print(f"{item[0]} - {item[1]}")
+    while True:
+        try:
+            if (choice := input("Number of your choice: ")) not in map(str, range(len(lst))):
+                raise ValueError(
+                    f"Please select a valid option contained in the list of options"
+                )
+            else:
+                return lst[int(choice)]
+        except ValueError as e:
+            print(f"Invalid data: {e}, please try again.\n")
