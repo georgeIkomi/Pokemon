@@ -465,3 +465,7 @@ torchic = DefensivePokemon("Torchic", "Fire", 1)
 oddish = RegenerativePokemon("Oddish", "Grass", 3)
 chimchar = RegenerativePokemon("Chimchar", "Fire", 2)
 squirtle = RegenerativePokemon("Squirtle", "Water", 1)
+
+malva = Trainer("Malva", [charmander, bulbasaur, squirtle])
+siebold = Trainer("Siebold", [slowking, chimchar, sunkern])
+cilan = Trainer("Cilan", [oddish, totodile, torchic])
