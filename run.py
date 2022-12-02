@@ -301,7 +301,57 @@ class Game:
         self.turn = 1
         self.computer_commands = []
         self.set_turn = True
-        
 
+    def start(self):
+        """
+        This method facilitates the commencement of a
+        new game each time it's called.
+        """
+        self.choose_trainers()
+        while True:
+            if self.set_turn:
+                self.pas = self.trainers[self.turn]
+                self.turn = 1 - self.turn
+                self.act = self.trainers[self.turn]
+                if self.modes[self.turn] == "Computer":
+                    print(f"\n{self.act}'s Turn:")
+                    self.get_computer_commands()
+                self.set_turn = False
 
+            commands_list = list(self.full_commands_list)
+            if self.act.potions == 0:
+                commands_list.remove("Use healing potion")
+            self.get_command(commands_list, f"{self.act}'s Turn:")
 
+            # Info
+            if self.command == "Info":
+                for trainer in self.trainers:
+                    trainer.info()
+
+            # Change active Pokemon
+            elif self.command == "Change active Pokemon":
+                self.get_command(self.act.pokemons,
+                                 f"{self.act} changes active Pokemon:")
+                self.act.active = self.command
+                self.act.show_active()
+
+            # Fight
+            elif self.command == "Fight":
+                self.act.battle(self.pas)
+                if len(self.pas.pokemons) == 0:
+                    print(f"{self.act} wins!")
+                    break
+                for pokemon in self.pas.pokemons:
+                    if pokemon.regenerative:
+                        pokemon.regenerate()
+                self.set_turn = True
+
+            # Use healing potion
+            elif self.command == "Use healing potion":
+                self.get_command(self.act.pokemons,
+                                 f"{self.act} uses healing potion:")
+                self.act.use_potion(self.command)
+
+            # Exit
+            elif self.command == "Exit":
+                break
