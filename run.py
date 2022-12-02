@@ -469,3 +469,5 @@ squirtle = RegenerativePokemon("Squirtle", "Water", 1)
 malva = Trainer("Malva", [charmander, bulbasaur, squirtle])
 siebold = Trainer("Siebold", [slowking, chimchar, sunkern])
 cilan = Trainer("Cilan", [oddish, totodile, torchic])
+
+all_trainers = [malva, siebold, cilan]
