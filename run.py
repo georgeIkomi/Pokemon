@@ -5,6 +5,11 @@ class Pokemon:
     creating Pokemon objects)
     """
     def __init__(self, name, type, level):
+        """
+        This method initializes newly created
+        instances of this class with the specified
+        attributes.
+        """
         self.name = name
         self.level = level
         self.type = type
