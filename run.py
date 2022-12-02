@@ -401,6 +401,33 @@ class Game:
         else:
             self.command = self.computer_commands.pop()
 
+    def get_computer_commands(self):
+        """
+        In a nutshell, this method determines the commands that
+        are executed during game time. It is invoked when the
+        Trainer mode chosen or indicated by the user is "Computer".
+
+        This method automates the commands chosen by the system/computer
+        as the game unfolds. Initially, the computer_commands instance
+        variable is an empty list, however, as the game unfolds it is
+        appended with the "Fight" command as the base option.
+
+        The method then iterates over the set of pokemons held by the
+        trainer whose turn it is, and based on certain conditions, chooses
+        the pokemon to use for the current run and determines what command
+        to execute subsequently (i.e. whether to "Use healing potion" or
+        "Change active Pokemon")
+        """
+        self.computer_commands.append("Fight")
+        best_attack = 0
+        for pokemon in self.act.pokemons:
+            if (attack := pokemon.battle_stats(self.pas.active)[0]) > best_attack:
+                best_pokemon, best_attack = pokemon, attack
+        if (best_pokemon.max_health - best_pokemon.current_health >= 100) and (self.act.potions > 0):
+            self.computer_commands += [best_pokemon, "Use healing potion"]
+        if best_pokemon != self.act.active:
+            self.computer_commands += [best_pokemon, "Change active Pokemon"]
+
 
 def choose_menu(lst, title):
     """
