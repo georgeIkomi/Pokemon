@@ -388,6 +388,19 @@ class Game:
                 pokemon.set_stats()
             self.all_trainers.remove(trainer)
 
+    def get_command(self, lst, title):
+        """
+        This method takes the list of command options and
+        the "Player" mode option as parameters. It is invoked
+        when the Trainer mode selected by the user is "Player"
+        and is responsible for the command option selected by
+        the user (and subsequently executed) during game time.
+        """
+        if self.modes[self.turn] == "Player":
+            self.command = choose_menu(lst, title)
+        else:
+            self.command = self.computer_commands.pop()
+
 
 def choose_menu(lst, title):
     """
