@@ -96,7 +96,7 @@ class Pokemon:
             print(f"{self} regenerates")
             self.gain_health(int(self.max_health*0.2))
 
-    def battle(self, opponent_pokemon):
+    def battle(self, opp_poke):
         """
         This method unpacks the "attack" metric for the attacking
         pokemon and "description" metric for the pokemon being attacked
@@ -106,9 +106,9 @@ class Pokemon:
         deduction the attack value from the health of the pokemon being
         attacked using the lose_health() method.
         """
-        attack, description = self.battle_stats(opponent_pokemon)
-        print(f"{self} attacks {opponent_pokemon} {description}")
-        opponent_pokemon.lose_health(attack)
+        attack, description = self.battle_stats(opp_poke)
+        print(f"{self} attacks {opp_poke} {description}")
+        opp_poke.lose_health(attack)
 
     def battle_stats(self, opponent_pokemon):
         """
