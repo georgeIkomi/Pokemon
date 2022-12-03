@@ -139,10 +139,10 @@ class Pokemon:
 class AttackPokemon(Pokemon):
     """
     This AttackPokemon class serves as a template for
-    creating instances of this class (i.e for
-    creating subsequent AttackPokemon instances or objects), 
-    and is a subclass of the parent class (Pokemon). It has
-    a .__init__() method which overrides the initialization 
+    creating instances of this class (i.e for creating
+    subsequent AttackPokemon instances or objects), and
+    is a subclass of the parent class (Pokemon). It has
+    a .__init__() method which overrides the initialization
     .__init__() method of its superclass (Pokemon) but has the
     capability of still invoking the __init__() method of its
     parent class (Pokemon) through the use of super().
