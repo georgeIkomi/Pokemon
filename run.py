@@ -218,7 +218,7 @@ class Trainer:
         specific to each instance of the Trainer class
         including the number of pokemon held, number of
         potions held, information specific to each pokemon
-        held, and also prints the current active pokemon to 
+        held, and also prints the current active pokemon to
         the console/terminal by invoking the show_active()
         method.
         """
