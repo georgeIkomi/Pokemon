@@ -80,7 +80,7 @@ class Pokemon:
         amount = min(amount, self.max_health - self.current_health)
         self.current_health += amount
         print(
-            f"{self} gains {amount} of health and has {self.current_health} of health now")
+            f"{self} gains {amount} of health, now has {self.current_health}")
 
     def regenerate(self):
         """
