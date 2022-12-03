@@ -107,10 +107,10 @@ class Pokemon:
         attacked using the lose_health() method.
         """
         attack, description = self.battle_stats(opp_poke)
-        print(f"{self} attacks {opp_poke} {description}")
+        print(f"{self} attacks {opp_poke}, {description}")
         opp_poke.lose_health(attack)
 
-    def battle_stats(self, opponent_pokemon):
+    def battle_stats(self, opp_poke):
         """
         This method calculates the attack level (or the
         attack intensity of each pokemon) based on the types of
@@ -125,13 +125,13 @@ class Pokemon:
         """
         types_dict = {"Fire": 0, "Water": 1, "Grass": 2}
         attack_type = (types_dict[self.type] -
-                       types_dict[opponent_pokemon.type]) % 3
+                       types_dict[opp_poke.type]) % 3
         attack_type_power_proportions = {0: 1, 1: 3/2, 2: 2/3}
-        attack = int(self.attack/(1+opponent_pokemon.defense /
+        attack = int(self.attack/(1+opp_poke.defense /
                      self.attack)*attack_type_power_proportions[attack_type])
         attack_type_description = {0: "",
-                                   1: f"with element bonus: {self.type} against {opponent_pokemon.type}",
-                                   2: f"with element penalty: {self.type} against {opponent_pokemon.type}"}
+                                   1: f"{self.type} against {opp_poke.type}",
+                                   2: f"{self.type} against {opp_poke.type}"}
 
         return attack, attack_type_description[attack_type]
 
