@@ -420,13 +420,13 @@ class Game:
         """
         self.computer_commands.append("Fight")
         best_attack = 0
-        for pokemon in self.act.pokemons:
-            if (attack := pokemon.battle_stats(self.pas.active)[0]) > best_attack:
-                best_pokemon, best_attack = pokemon, attack
-        if (best_pokemon.max_health - best_pokemon.current_health >= 100) and (self.act.potions > 0):
-            self.computer_commands += [best_pokemon, "Use healing potion"]
-        if best_pokemon != self.act.active:
-            self.computer_commands += [best_pokemon, "Change active Pokemon"]
+        for poke in self.act.pokemons:
+            if (attack := poke.battle_stats(self.pas.active)[0]) > best_attack:
+                p, best_attack = poke, attack
+        if (p.max_health - p.current_health >= 100) and (self.act.potions > 0):
+            self.computer_commands += [p, "Use healing potion"]
+        if p != self.act.active:
+            self.computer_commands += [p, "Change active Pokemon"]
 
 
 def choose_menu(lst, title):
