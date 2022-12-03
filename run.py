@@ -445,10 +445,11 @@ def choose_menu(lst, title):
     for item in enumerate(lst):
         print(f"{item[0]} - {item[1]}")
     while True:
+        choice = input("Number of your choice: ")
         try:
-            if (choice := input("Number of your choice: ")) not in map(str, range(len(lst))):
+            if choice not in map(str, range(len(lst))):
                 raise ValueError(
-                    f"Please select a valid option contained in the list of options"
+                    f"Select a valid option contained in the list of options"
                 )
             else:
                 return lst[int(choice)]
