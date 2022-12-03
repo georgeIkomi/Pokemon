@@ -70,7 +70,7 @@ class Pokemon:
         amount = min(amount, self.current_health)
         self.current_health -= amount
         print(
-            f"{self} loses {amount} of health and has {self.current_health} of health now")
+            f"{self} loses {amount} of health, now has {self.current_health}")
 
     def gain_health(self, amount):
         """
