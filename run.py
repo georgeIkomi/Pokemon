@@ -434,12 +434,12 @@ def choose_menu(lst, title):
     This method takes a list and option title as parameters.
     It the iterates over the list (using the enumerate()
     method) assigning the counter as a key for each value
-    within the provided list and displayed to the user in 
+    within the provided list and displayed to the user in
     the terminal. Finally, it checks if the input provided
     by the user is contained within the provided list. If
     so, it returns the value chosen. Otherwise, it raises
     a ValueError informing the user that an invalid input
-    has been given and prompts the user to try again. 
+    has been given and prompts the user to try again.
     """
     print(f"\n{title}")
     for item in enumerate(lst):
