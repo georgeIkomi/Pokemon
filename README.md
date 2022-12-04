@@ -70,7 +70,9 @@ At this point, the winning user/trainer will be displayed in the terminal.
     before initiating the next round of battle through selection ofthe "Fight"
     menu option.
 
-![](/assets/images/info1_scrnshot.png)   ![](/assets/images/info2_scrn-shot.png)
+![](/assets/images/info1_scrnshot.png)
+
+![](/assets/images/info2_scrn-shot.png)
 
 
 
