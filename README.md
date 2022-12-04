@@ -97,6 +97,19 @@ At this point, the winning user/trainer will be displayed in the terminal.
 
 ![](/assets/images/fight_scrn-shot.png)
 
+* Using a healing potion on a Pokemon
+
+  - This feature gives a uaer or trainer the ability to heal any of its Pokemon
+    after losing health or sustaining damage from being attacked. It facilitates
+    the addition of a set amount to the Pokemon's health when selected from the
+    set of game menu options.
+
+  - This is advantageous in that it provides the trainer or user with the ability
+    to prolong a Pokemon's capability to fight or attack during the course of the
+    game despite sustaining damage.
+
+![](/assets/images/use_healing_potion_scrn-shot.png)  
+
 
 
 
