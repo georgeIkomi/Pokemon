@@ -86,6 +86,17 @@ At this point, the winning user/trainer will be displayed in the terminal.
 
 ![](/assets/images/change_active_pokemon-scrn-shot.png)
 
+* Fight
+
+  - This feature simulates the attack of one Pokemon on an opponent Pokemon.
+
+  - It is beneficail to the user as they can easily glean the attaccking Pokemon
+    and the Pokemon being attacked. It also presents information regarding the 
+    the amount of loss in health sustained by the Pokemon being attacked and the 
+    the amount of health remaining.
+
+![](/assets/images/fight_scrn-shot.png)
+
 
 
 
