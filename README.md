@@ -74,6 +74,20 @@ At this point, the winning user/trainer will be displayed in the terminal.
 
 ![](/assets/images/info2_scrn-shot.png)
 
+* Change the active Pokemon
+
+  - This feature gives the user or trainer the ability to change the current 
+    active Pokemon at any point during game time.
+
+  - This is particularly useful as the user or trainer can change the current
+    active Pokemon that has sustained substantial damage in a preceding or 
+    previous fight round to a Pokemon with full health for the next or subsequent
+    round.
+
+![](/assets/images/change_active_pokemon-scrn-shot.png)
+
+
+
 
 
         
