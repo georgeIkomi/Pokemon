@@ -121,6 +121,20 @@ At this point, the winning user/trainer will be displayed in the terminal.
 
 ![](/assets/images/exit_scrn-shot.png)
 
+* Regenarate a Pokemon
+
+  - This feature is in many ways similar to that of the "Use healing potion" feature
+    in that it boosts the health level of a Pokemon, thereby prolonging the Pokemon's
+    ability to do battle during the course of the game. This functionality is peculiar
+    to a Pokemon that is regenerative in nature, and unlike the "Use healing potion"
+    feature, it adds a percentage of the maximum health to the current health of the
+    Pokemon.
+
+  - This useful as it provides yet another way for a trainer's Pokemon to recuperate
+    from sustaining damage in the course of being attacked by an opposing Pokemon.
+
+![](/assets/images/regenerate_scrn-shot.png)
+
 
 
 
