@@ -108,7 +108,18 @@ At this point, the winning user/trainer will be displayed in the terminal.
     to prolong a Pokemon's capability to fight or attack during the course of the
     game despite sustaining damage.
 
-![](/assets/images/use_healing_potion_scrn-shot.png)  
+![](/assets/images/use_healing_potion_scrn-shot.png)
+
+* Exit
+
+  - This functionality gives the user the option of exiting or quitting at any
+    point during the course of the game.
+
+  - This feature is useful as it gives the user(s) the opportunity to terminate
+    the game play gracefully if the need arises to do so at any point during the
+    course of the game.
+
+![](/assets/images/exit_scrn-shot.png)
 
 
 
