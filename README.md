@@ -43,6 +43,9 @@ Where "Player" has been chosen as either the first or second trainer mode, the u
 
 The user/trainer who's in the "Player" mode can also select any of the other game menu options at any time during the game. For example, a user might want to change their active Pokemon which perhaps had sustained substantial damage (significant dip in health level) from the preceding round.
 
-    5. Choose the "Fight" game menu option to commence battle in turns until all the Pokemon held by a user/trainer are dead. At this point, the winning user/trainer will be displayed in the terminal.
+    5. Choose the "Fight" game menu option to commence battle in turns until all the
+       Pokemon held by a user/trainer are dead.
+
+At this point, the winning user/trainer will be displayed in the terminal.  
 
 
