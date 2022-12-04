@@ -46,6 +46,36 @@ The user/trainer who's in the "Player" mode can also select any of the other gam
     5. Choose the "Fight" game menu option to commence battle in turns until all the
        Pokemon held by a user/trainer are dead.
 
-At this point, the winning user/trainer will be displayed in the terminal.  
+At this point, the winning user/trainer will be displayed in the terminal.
+
+# Features
+
+## Existing Features
+
+* Display of Pokemon information/stats
+
+  - This feature displays different information or stats about the
+    Pokemon held by each user or tariner at various points during
+    game time.
+
+  - This is useful to the user as it serves as a single point of 
+    reference for the user to glean information.
+
+  - Also, choosing the "Info" menu option and displaying this information
+    at various points during game time provides the user with information
+    that could determine the trainer or user's next move. If, for example,
+    a user or trainer's current active Pokemon had been battered in an earlier
+    round, the user could decide to either change their active Pokemon or use a 
+    healing potion on the current active Pokemon to ramp up the health level 
+    before initiating the next round of battle through selection ofthe "Fight"
+    menu option.
+
+![](/assets/images/info1_scrnshot.png)   ![](/assets/images/info2_scrn-shot.png)
+
+
+
+        
+
+
 
 
