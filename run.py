@@ -307,6 +307,10 @@ class Game:
         This method facilitates the commencement of a
         new game each time it's called.
         """
+        print("\n")
+        print("*" * 38)
+        print("Welcome to the the world of Pokemon!!")
+        print("*" * 38)
         self.choose_trainers()
         while True:
             if self.set_turn:
