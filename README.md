@@ -237,6 +237,18 @@ This class contains all the methods that will enable the user to play the game s
 
     ![](/assets/images/get_computer_commands.png)
 
+## Bugs
+
+### Solved Bugs
+
+  * When this project was initially written, there were issues around implementing 
+    playing the game in turns. Even though no errors were popping up, when one player
+    had finished their turn in attacking the Pokemon ofthe other player, there was nothing prompting the other player whose turn it is to take their turn in attacking or doing whatever it is that they so wished.
+
+    The problem was that I had not inserted a "self.set_turn = True" statement in the code for the "Fight" menu option in the .start() method of the Game class. 
+
+    This was subsequently addressed and the issue resolved.  
+
 
 
 
