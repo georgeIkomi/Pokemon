@@ -274,6 +274,19 @@ This project was deployed using Code Institute's mock terminal for Heroku.
     - Linked the Heroku app to the repository.
     - Click on Deploy.
 
+# Credits
+
+  * Idea for this project conceived from <https://pokemondb.net/type>
+
+  * Bio-data of Pokemons and Trainers were taken from <https://pokemondb.net/type>
+
+  * Instructions on how to validate input from the user was taken from
+    [Code-Institute-LMS](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/c92755338ef548f28cc31a7c3d5bfb46/)
+
+  * Further knowledge acquisition on Object-Oriented programming was taken from
+    freeCodeCamp tutorial article by Patrick Cyubahiro on
+    <https://freecodecam.org/news/object-oriented-programming-concepts-java/>  
+
 
 
 
