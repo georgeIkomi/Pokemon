@@ -211,6 +211,18 @@ This class contains all the methods that will enable the user to play the game s
 
     ![](/assets/images/game_class-test.png)
 
+    - choose_trainers() Method
+      
+      Access to the "all_trainers" instance variable was carried out by initially creating a new instance of the Game class and storing it in the variable "game". The "all_trainers" instance variable was then called on this newly created instance of the Game class using the dot notation. The result was a list of all the trainers printed out to the terminal. The print statement was subsequently removed.
+
+    ![](/assets/images/choose_trainers-all_trainers.png)
+
+      To further demostrate the functionality of this method, the .start() method was then called on the newly instantiated game object using the dot notation. Afterwards, the instance variables "trainers" and "modes" were called on this new instance of the Game class using the dot notaion. Using the print statement, the corresponding values for these instance variables were printed out to the terminal (the last two lines in both screenshot images that follow). The print statements were subsequently deleted.
+
+    ![](/assets/images/choose_trainers-modes-trainers.png)
+
+    ![](/assets/images/choose_trainers-modes-trainers1.png)
+
 
 
 
