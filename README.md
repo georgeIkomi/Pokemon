@@ -179,6 +179,20 @@ Every instance of this class stores all data relating to all the trainers (colle
 
 This class contains all the methods that will enable the user to play the game such as the choose_trainers() method to enable the user choose the trainer mode and trainer that they want, the get_command() method for executing the menu option chosen by the user during game time (implemented by the start() method), and a get_computer_commands() method necessary for facilitating playing with the computer.
 
+# Testing
+
+  * Pokemon class & subclasses
+
+    In testing the Pokemon class and sub-classes, a new instance of one of the sub-classes(AttackPokemon class) was created and stored in a variable.
+
+    Each of the instance variables (.name, .level, .type, .base_max_health, etc) were then called (using the dot notation) on this new instance and printing the outcome to the terminal. The result were the corresponding values for each of the instance variables. The new instance of the Sub-class and print statements were subsequently deleted/removed.
+
+    ![](/assets/images/pokemon_class_test1_scrn-shot.png)
+
+    In order to test access to the following instance variables of the Pokemon class - max_health, current_health, attack, and defense, a new instance of one of the Pokemon Sub-class was created and assigned to a variable. Then an instance of the Game class was created and assigned to a variable. The .start() method was invoked on this new instance of the Game class, and with the print statement, each of the instance variables in question were then called on the instance of the Pokemon Sub-class using the dot notation. The corresponding values (last four lines of the screenshot below) for the instance variables in question were displayed in the terminal. All print statements were then subsequently removed.
+
+    ![](/assets/images/pokemon_class_test2_scrn-shot.png)
+
 
 
 
