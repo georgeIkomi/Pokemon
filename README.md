@@ -203,6 +203,14 @@ This class contains all the methods that will enable the user to play the game s
 
     ![](/assets/images/trainer_class-test.png)
 
+  * Game class
+
+    In testing that an instance of the Game class is able to access the class variable and instance variables, a new instance of the class was created and assigned to variable. A list of the trainers was also created and assigned to a variable and passed into the instantiation of the Game class as a parameter.
+
+    The class and instance variables were then called (using the dot notation) on the newly instantiated or created Game object and printing the outcome to the terminal. The result was the corresponding values for each of the instance variables and class variable. The new instances and print statements were subsequently deleted.
+
+    ![](/assets/images/game_class-test.png)
+
 
 
 
