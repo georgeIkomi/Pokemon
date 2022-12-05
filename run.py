@@ -310,6 +310,10 @@ class Game:
         print("\n")
         print("*" * 38)
         print("Welcome to the the world of Pokemon!!")
+        print("\nNumber of Game modes: 2.")
+        print("Number of trainers: 3.")
+        print("Number of Pokemons per trainer: 3")
+        print("Number of potions per trainer: 3")
         print("*" * 38)
         self.choose_trainers()
         while True:
