@@ -262,6 +262,18 @@ This class contains all the methods that will enable the user to play the game s
     - When code was put through the CI Python Linter initially, 13 errors were found all
       relating to either code lines being too long or the presence of trailing white spaces. These errors were addressed and subsequent testing on the CI Python Linter returned no errors.
 
+# Deployment
+
+This project was deployed using Code Institute's mock terminal for Heroku.
+
+  * Steps for deployment:
+    - Logged into my Heroku account.
+    - Navigated to the Dashboard page.
+    - Created a new Heroku app.
+    - Set the buildpacks to Python and Node.js in that order.
+    - Linked the Heroku app to the repository.
+    - Click on Deploy.
+
 
 
 
