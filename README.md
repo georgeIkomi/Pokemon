@@ -193,6 +193,16 @@ This class contains all the methods that will enable the user to play the game s
 
     ![](/assets/images/pokemon_class_test2_scrn-shot.png)
 
+  * Trainer class
+
+    Testing this class involved creating new a new instance of the Pokemon Sub-classes: AttackPokemon, DefensivePokemon, and Regenerative Pokemon, and assigning each instance to a variable. As the Trainer class takes a name, and a list of pokemons as parameters, these newly created/instantiated pokemon objects will be passed into the Trainer class when creating a new instance of it.
+
+    An instance of the Trainer class was then created and assigned to a variable. This newly created Trainer object will take a name and list of pokemon as parameters.
+
+    Each of the instance variables (.name, .pokemons, .active, and .potions) were then called (using the dot notation) on the newly instantiated or created Trainer object and printing the outcome to the terminal. The result were the corresponding values for each of the instance variables. The new instances and print staements were subsequently removed.
+
+    ![](/assets/images/trainer_class-test.png)
+
 
 
 
