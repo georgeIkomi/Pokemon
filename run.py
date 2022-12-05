@@ -453,7 +453,7 @@ def choose_menu(lst, title):
     for item in enumerate(lst):
         print(f"{item[0]} - {item[1]}")
     while True:
-        choice = input("Number of your choice: ")
+        choice = input("Number of your choice:\n ")
         try:
             if choice not in map(str, range(len(lst))):
                 raise ValueError(
