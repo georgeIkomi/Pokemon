@@ -223,6 +223,14 @@ This class contains all the methods that will enable the user to play the game s
 
     ![](/assets/images/choose_trainers-modes-trainers1.png)
 
+    - get_command() method
+
+      The functionality of this method of the Game class was tested by inserting a print statement within the body of the method. The resulting output to the terminal as the game ran was the corresponding command menu option chosen by the user as demonstrated in the first (line 8) and second (line 8) screenshots. The print statement was subsequently removed.
+
+    ![](/assets/images/get_command1.png)
+
+    ![](/assets/images/get_command2.png)
+
 
 
 
