@@ -237,6 +237,8 @@ This class contains all the methods that will enable the user to play the game s
 
     ![](/assets/images/get_computer_commands.png)
 
+  * Testing also conducted in the Code Institute Heroku terminal.
+
 ## Bugs
 
 ### Solved Bugs
