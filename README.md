@@ -247,7 +247,11 @@ This class contains all the methods that will enable the user to play the game s
 
     The problem was that I had not inserted a "self.set_turn = True" statement in the code for the "Fight" menu option in the .start() method of the Game class. 
 
-    This was subsequently addressed and the issue resolved.  
+    This was subsequently addressed and the issue resolved.
+
+## Remaining Bugs
+
+  * No bugs remaining
 
 
 
