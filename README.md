@@ -153,6 +153,34 @@ At this point, the winning user/trainer will be displayed in the terminal.
 
 ![](/assets/images/input_validation2_scrn-shot.png)
 
+# Data Model
+
+I decided to use Pokemon classes comprising of a super class and sub-classes, Trainer class, and a Game class as my model.
+
+## Pokemon (Super class)
+
+The main Pokemon class (super class) stores data that is common to all instances of the parent class such as the name of the Pokemon, the type of Pokemon, level, base maximum health, base attack, base defense, and regenerative set to False.
+
+The class also has methods to help play the game and provide essential information to the user while playing the game, such as an 'info' method to print out information about the Pokemon, and a battle stats methods to enable the user monitor vital metrics about the Pokemon as they do battle.
+
+## Pokemon (Sub-classes)
+
+In addition to data stored by their Super class and the methods contained therein, the Pokemon Sub-classes also store data that is perculiar to the nature of the Pokemon Sub-class such as base attack for the Attack Pokemon, base defense for the Defensive Pokemon, and regenerative set to True for the Regenerative Pokemon.
+
+## Trainer class
+
+The Trainer class stores data that is common to all instances of this class such as the name of the trainer, the list of Pokemons held by the trainer, the active Pokemon of the trainer, and the number of potions held by the trainer.
+
+The class also has methods to help play the game such as the info() method that prints out certain stats about the trainer like the number of Pokemon held and information about each Pokemon, and the current active Pokemon for the trainer. It also includes a method that prints out information relating to when the trainer has used a potion, on which Pokemon the potion has been used, and adjusts the health value of the Pokemon accordingly.
+
+## Game class
+
+Every instance of this class stores all data relating to all the trainers (collectively), all the Pokemons held by the trainers(including the number of potions held) and any other data or information that is important or useful for the purpose of playing the game.
+
+This class contains all the methods that will enable the user to play the game such as the choose_trainers() method to enable the user choose the trainer mode and trainer that they want, the get_command() method for executing the menu option chosen by the user during game time (implemented by the start() method), and a get_computer_commands() method necessary for facilitating playing with the computer.
+
+
+
 
 
 
