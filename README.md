@@ -255,6 +255,13 @@ This class contains all the methods that will enable the user to play the game s
 
   * No bugs remaining
 
+## Validator Testing
+
+  * CI Python Linter
+
+    - When code was put through the CI Python Linter initially, 13 errors were found all
+      relating to either code lines being too long or the presence of trailing white spaces. These errors were addressed and subsequent testing on the CI Python Linter returned no errors.
+
 
 
 
