@@ -231,6 +231,12 @@ This class contains all the methods that will enable the user to play the game s
 
     ![](/assets/images/get_command2.png)
 
+    - get_computer_commands()
+
+      The functionality of this method of the Game class was tested by inserting print statements at certain points within the body of the method. The corresponding values for each of the print statements were displayed in the terminal. These print statements were subsequently removed after testing.
+
+    ![](/assets/images/get_computer_commands.png)
+
 
 
 
