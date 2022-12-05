@@ -135,6 +135,24 @@ At this point, the winning user/trainer will be displayed in the terminal.
 
 ![](/assets/images/regenerate_scrn-shot.png)
 
+* Input validation and error-checking
+
+  - You cannot enter number input options outside the range of numbers specified as
+    number options in the list of menu options.
+
+  - You cannot enter the string equivalent of the numbered options contained in the
+    list of menu options.
+
+  - You cannot enter special characters as input values.
+
+  - You cannot enter any input value that is not in the list of menu options.
+
+  - Only numbers contained in the list of menu options will be considered as valid.
+
+![](/assets/images/input1_validation_scrn-shot.png)
+
+![](/assets/images/input_validation2_scrn-shot.png)
+
 
 
 
